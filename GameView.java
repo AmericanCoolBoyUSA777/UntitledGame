@@ -1,0 +1,23 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class GameView extends JPanel {
+    private Engine engine;
+
+    public GameView(Engine engine) {
+        this.engine = engine;
+        new Timer(16, e -> {
+            repaint();
+        }).start();
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+    }
+}
